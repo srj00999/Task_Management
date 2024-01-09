@@ -1,0 +1,137 @@
+.container {
+  max-width: 50%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.header {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 2px solid cornflowerblue;
+}
+
+select {
+  width: 15%;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid cornflowerblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 22%;
+  font-size: 16px;
+}
+
+.task-heading {
+  font-size: 32px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.edit-input {
+  width: 60%;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.task-text {
+  flex-grow: 1;
+}
+
+.action-buttons button {
+  margin-left: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 875px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.priority-box,
+.category-box {
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.priority-high,
+.category-pending {
+  background-color: red;
+  color: white;
+}
+
+.priority-medium,
+.category-working {
+  background-color: yellow;
+}
+
+.priority-low,
+.category-completed {
+  background-color: green;
+  color: white;
+}
+
+select.category-filter,
+select.priority-filter {
+  width: 50%;
+}
+
+.action-buttons .remove-task {
+  background-color: red;
+}
+
+button:disabled {
+  background-color: gray;
+  color: white;
+  text-decoration-line: line-through;
+}
