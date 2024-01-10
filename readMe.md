@@ -1,7 +1,7 @@
 # Task Manager Web App
-https://tasks-mngr.netlify.app/
 
 A simple Task Manager web application built with React for managing tasks, including features like priority, category.
+https://tasks-mngr.netlify.app/
 
 ## Features
 
