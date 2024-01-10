@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faPen } from "@fortawesome/free-solid-svg-icons";
 import "./TaskManager.css";
 
-const BASE_API = "http://localhost:3001/tasks/";
+const BASE_API = "https://tasks-manager-ywec.onrender.com/tasks/";
 
 export const TaskManager = () => {
   const [activity, setActivity] = useState("");
