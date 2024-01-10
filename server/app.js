@@ -15,7 +15,7 @@ app.use(notFound);
 
 const startDbAndServer = async () => {
   try {
-    await connectDB("mongodb://0.0.0.0:27017/");
+    await connectDB("mongodb+srv://srj00999:Srj05011996@cluster0.yggiltu.mongodb.net/?retryWrites=true&w=majority");
     app.listen(3001, () => {
       console.log("Server stared on 3001");
     });
